@@ -1,26 +1,27 @@
 <?php
 
-class DB{
+class DB
+{
     private $servername;
     private $dbname;
     private $user;
-    private $passeword;
+    private $password;
     private $charset;
 
-    public function connect(){
-        $this->dbname = "cinemaster";
-        $this->servername = "localhost";
-        $this->user = "root";
-        $this->passeword = "";
-        $this->charset = "utf8mb4";
+    static public function connect()
+    {
+        $dbname = "cinemaster";
+        $host = "localhost";
+        $user = "root";
+        $password = "";
 
         try {
-            $dsn = "mysql:host=" . $this->servername . ";dbname=" . $this->dbname . ";charset=" . $this->charset;
-            $pdo = new PDO($dsn, $this->user, $this->passeword);
+            $dsn = "mysql:host=".$host.";dbname=".$dbname.";charset=utf8mb4";
+            $pdo = new PDO($dsn, $user, $password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         } catch (PDOException $e) {
-            echo "Connection Failed :".$e->getMessage();
+            echo "wtf" . $e->getMessage();
         }
     }
 }
