@@ -1,6 +1,6 @@
 <?php
 
-class DB
+class DatabaseModel
 {
     private $servername;
     private $dbname;

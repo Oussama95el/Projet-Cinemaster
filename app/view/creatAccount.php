@@ -1,5 +1,4 @@
 <?php
-require_once '../controller/user.controller.php';
 if (isset($_POST['submit'])){
     $user = new UserController();
     $user->register();
@@ -20,7 +19,7 @@ if (isset($_POST['submit'])){
     <title>CINEMASTER</title>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/style/main.css">
+    <link rel="stylesheet" href="public/style/main.css">
 </head>
 
 <body>
@@ -32,7 +31,7 @@ if (isset($_POST['submit'])){
                         <div id="brand">
                             CINE<span id="brandMod">MASTER</span>
                         </div>
-                        <img src="../../public/Images/movies/Logo.png" height="28" alt="CoolBrand">
+                        <img src="public/Images/movies/Logo.png" height="28" alt="CoolBrand">
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
@@ -45,7 +44,7 @@ if (isset($_POST['submit'])){
                             <a href="#" class="nav-item nav-link" tabindex="-1">Blog</a>
                         </div>
                         <div class="navbar-nav ms-auto">
-                            <a href="./login.php" class="nav-item nav-link">Login</a>
+                            <a href="./login" class="nav-item nav-link">Login</a>
                         </div>
                     </div>
                 </div>

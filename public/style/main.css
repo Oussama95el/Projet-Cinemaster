@@ -9,7 +9,7 @@
 
 body {
   background-color: black;
-  padding: 10px;
+  /*  padding: 10px; */
 }
 
 h4 {
@@ -17,28 +17,18 @@ h4 {
 }
 
 #navbarCollapse {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-left: 20rem;
 }
 
 #brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
 }
 
 #brand-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
@@ -68,12 +58,10 @@ h4 {
 .slider-btn {
   gap: 40px;
 }
-
 .slider-btn .btn {
   background-color: #e67e08;
   margin-left: 20px;
 }
-
 .slider-btn .btn-outline-primary:hover {
   color: #e67e08 !important;
   border-color: #e67e08 !important;
@@ -85,15 +73,13 @@ h4 {
     height: 80vh !important;
     margin: auto !important;
   }
+
   #navbarCollapse {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     margin-left: 0px;
     text-align: center;
   }
 }
-
 .card-body {
   background-color: #343a40;
 }
@@ -106,7 +92,6 @@ h4 {
 @media (max-width: 768px) {
   /*  */
 }
-
 .display-3 {
   color: #e67e08;
   margin-left: 30px;
@@ -115,25 +100,15 @@ h4 {
 }
 
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 .contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 35px;
   margin: auto;
   width: 60%;
@@ -149,11 +124,11 @@ h4 {
     width: 80%;
     padding: 10px;
   }
+
   #submit-btn {
     width: 100%;
   }
 }
-
 #login-container1 {
   margin-top: 100px;
   background-color: #343a40;
@@ -191,34 +166,32 @@ h4 {
 
 @media (max-width: 768px) {
   #login-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
+
   #submit-btn {
     width: 100px;
   }
+
   #login-container2 {
     margin-top: 0;
   }
+
   #login-container1 {
     margin-top: 50px;
     background-color: #343a40;
     padding: 30px;
     width: 60%;
   }
+
   #login-container2 {
     background-color: #343a40;
     padding: 30px;
     width: 60%;
   }
 }
-
 @media (max-width: 480px) {
   #login-container1 {
     margin-top: 50px;
@@ -226,10 +199,53 @@ h4 {
     padding: 30px;
     width: 90%;
   }
+
   #login-container2 {
     background-color: #343a40;
     padding: 30px;
     width: 90%;
   }
 }
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  color: #ffffff !important;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+#profil-menu {
+  margin-right: 30px;
+}
+
+.container-category {
+  margin-top: 20px;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  background-color: #343a40;
+}
+
+.bg-gey {
+  background-color: #343a40;
+}
+
+#post-container {
+  width: 60%;
+  margin-top: 20px;
+}
+
+#panel-container {
+  width: 20%;
+  margin-top: 20px;
+}
+
+.text-black {
+  color: black;
+}
+
 /*# sourceMappingURL=main.css.map */

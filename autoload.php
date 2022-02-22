@@ -8,15 +8,14 @@ function  autoload($class_name)
     $array_paths = array(
     'controller/classes',
     'model/',
-    'controller/'
+    'controller'
 );
-    $parts = explode('\\', $class_name);
-    $name = array_pop($parts);
 
     foreach ($array_paths as $path) {
-    $file = sprintf($path . '%s.php', $name);
-        if (is_file($file)) {
+    $file = "app/$path/$class_name.php";
+        if (file_exists($file)) {
         require_once $file;
+        break;
         }
     }
 }
