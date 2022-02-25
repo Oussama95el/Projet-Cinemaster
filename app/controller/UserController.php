@@ -1,7 +1,7 @@
 <?php
 //require_once '../model/UserModel.php';
 //require_once '/redirectClass.php';
-
+session_start();
 
 
 class UserController

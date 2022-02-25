@@ -226,7 +226,7 @@ h4 {
   margin-top: 20px;
   padding: 10px;
   width: 200px;
-  height: auto;
+  height: 90vh;
   background-color: #343a40;
 }
 
@@ -235,7 +235,7 @@ h4 {
 }
 
 #post-container {
-  width: 60%;
+  width: 80%;
   margin-top: 20px;
 }
 
@@ -246,6 +246,14 @@ h4 {
 
 .text-black {
   color: black;
+}
+
+#menu-post {
+  font-size: large;
+  font-weight: 800;
+  letter-spacing: 4px;
+  background-color: #343a4000;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
