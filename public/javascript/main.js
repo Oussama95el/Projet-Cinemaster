@@ -22,7 +22,6 @@ addPostBtn.addEventListener("click", () => {
     categorie.value = "Action";
     postId.value = "";
     currentPicture.value = "";
-
 })
 // form.addEventListener("submit", () => {
 //     if(form.action = )

@@ -206,6 +206,11 @@ h4 {
     width: 90%;
   }
 }
+#logout-btn {
+  text-decoration: none;
+  width: fit-content;
+}
+
 .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
